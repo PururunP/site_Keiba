@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Explorer</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    .folder {
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .file a {
+      text-decoration: none;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>競馬サイト</h1>
+  <h2>📁 HtmlPathTree</h2>
+  <button onclick="expandAll()">すべて展開</button>
+  <button onclick="collapseAll()">すべて閉じる</button>
+  <ul id="tree"></ul>
+
+  <script>
+    // HtmlPathTree.jsonからpagesフォルダ内のファイル構造を取得しHTMLにツリー構造で反映
+    function createNode(node) {
+      const li = document.createElement("li");
+
+      if (node.type === "dir") {
+        const span = document.createElement("span");
+        span.textContent = "📁 " + node.name;
+        span.className = "folder";
+
+        const ul = document.createElement("ul");
+        ul.classList.add("hidden");
+
+        span.onclick = () => {
+          ul.classList.toggle("hidden");
+          span.textContent =
+            (ul.classList.contains("hidden") ? "📁 " : "📂 ")
+            + node.name;
+        };
+
+        node.children.forEach(child => {
+          ul.appendChild(createNode(child));
+        });
+
+        li.appendChild(span);
+        li.appendChild(ul);
+
+      } else {
+        const a = document.createElement("a");
+        a.href = node.path;
+        a.textContent = "📄 " + node.name;
+
+        li.className = "file";
+        li.appendChild(a);
+      }
+
+      return li;
+    }
+
+    fetch(HtmlPathTree.json)
+      .then(res => res.json())
+      .then(data => {
+        const root = document.getElementById("tree");
+        root.appendChild(createNode(data));
+      });
+
+    // ulタグをすべて展開
+    function expandAll() {
+      document.querySelectorAll("#tree ul").forEach(ul => {
+        ul.classList.remove("hidden");
+      });
+
+      document.querySelectorAll(".folder").forEach(span => {
+        span.textContent = span.textContent.replace("📁", "📂");
+      });
+    }
+
+    // ulタグをすべて閉じる
+    function collapseAll() {
+      document.querySelectorAll("#tree ul").forEach(ul => {
+        ul.classList.add("hidden");
+      });
+
+      document.querySelectorAll(".folder").forEach(span => {
+        span.textContent = span.textContent.replace("📂", "📁");
+      });
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+# ワークフロー名
+name: Generate HtmlPathTree
+
+# 実行条件（pagesにプッシュされた時）
+on:
+  push:
+    paths:
+      - "pages/**"
+
+# 処理内容
+jobs:
+  # ジョブ名
+  build:
+    # Linux環境で実行
+    runs-on: ubuntu-latest
+
+    # 実行開始
+    steps:
+      # リポジトリ取得
+      - uses: actions/checkout@v4
+      # Node.js取得
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      # node.jsでjsファイルを実行
+      - run: node scripts/MakeHtmlPathTree.js
+
+      # コミット処理
+      - name: Commit
+        run: |
+          git config user.name "github-actions"
+          git config user.email "pururunp@gmail.com"
+          git add HtmlPathTree.json
+          git commit -m "HtmlPathTree update（system's commit）" || echo "no changes"
+          git push
