@@ -76,7 +76,7 @@
       return li;
     }
 
-    fetch(HtmlPathTree.json)
+    fetch("HtmlPathTree.json")
       .then(res => res.json())
       .then(data => {
         const root = document.getElementById("tree");
