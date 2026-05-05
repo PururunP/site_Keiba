@@ -136,51 +136,6 @@
           ]
         }
       ]
-    },
-    {
-      "name": "yyyy",
-      "type": "dir",
-      "children": [
-        {
-          "name": "mm",
-          "type": "dir",
-          "children": [
-            {
-              "name": "dd",
-              "type": "dir",
-              "children": [
-                {
-                  "name": "XX",
-                  "type": "dir",
-                  "children": [
-                    {
-                      "name": "nnR",
-                      "type": "dir",
-                      "children": [
-                        {
-                          "name": "予想.html",
-                          "type": "file",
-                          "path": "pages/yyyy/mm/dd/XX/nnR/予想.html"
-                        },
-                        {
-                          "name": "過去データ.html",
-                          "type": "file",
-                          "path": "pages/yyyy/mm/dd/XX/nnR/過去データ.html"
-                        }
-                      ]
-                    },
-                    {
-                      "name": "馬場情報整理.html",
-                      "type": "file",
-                      "path": "pages/yyyy/mm/dd/XX/馬場情報整理.html"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ]
 }
