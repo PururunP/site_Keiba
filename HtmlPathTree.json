@@ -1,0 +1,186 @@
+{
+  "name": "pages",
+  "type": "dir",
+  "children": [
+    {
+      "name": "2026",
+      "type": "dir",
+      "children": [
+        {
+          "name": "05",
+          "type": "dir",
+          "children": [
+            {
+              "name": "03",
+              "type": "dir",
+              "children": [
+                {
+                  "name": "京都",
+                  "type": "dir",
+                  "children": [
+                    {
+                      "name": "馬場情報整理.html",
+                      "type": "file",
+                      "path": "pages/2026/05/03/京都/馬場情報整理.html"
+                    }
+                  ]
+                },
+                {
+                  "name": "新潟",
+                  "type": "dir",
+                  "children": [
+                    {
+                      "name": "馬場情報整理.html",
+                      "type": "file",
+                      "path": "pages/2026/05/03/新潟/馬場情報整理.html"
+                    }
+                  ]
+                },
+                {
+                  "name": "東京",
+                  "type": "dir",
+                  "children": [
+                    {
+                      "name": "馬場情報整理.html",
+                      "type": "file",
+                      "path": "pages/2026/05/03/東京/馬場情報整理.html"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "02",
+              "type": "dir",
+              "children": [
+                {
+                  "name": "京都",
+                  "type": "dir",
+                  "children": [
+                    {
+                      "name": "馬場情報整理.html",
+                      "type": "file",
+                      "path": "pages/2026/05/02/京都/馬場情報整理.html"
+                    }
+                  ]
+                },
+                {
+                  "name": "新潟",
+                  "type": "dir",
+                  "children": [
+                    {
+                      "name": "馬場情報整理.html",
+                      "type": "file",
+                      "path": "pages/2026/05/02/新潟/馬場情報整理.html"
+                    }
+                  ]
+                },
+                {
+                  "name": "東京",
+                  "type": "dir",
+                  "children": [
+                    {
+                      "name": "馬場情報整理.html",
+                      "type": "file",
+                      "path": "pages/2026/05/02/東京/馬場情報整理.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "04",
+          "type": "dir",
+          "children": [
+            {
+              "name": "26",
+              "type": "dir",
+              "children": [
+                {
+                  "name": "京都",
+                  "type": "dir",
+                  "children": [
+                    {
+                      "name": "馬場情報整理.html",
+                      "type": "file",
+                      "path": "pages/2026/04/26/京都/馬場情報整理.html"
+                    }
+                  ]
+                },
+                {
+                  "name": "東京",
+                  "type": "dir",
+                  "children": [
+                    {
+                      "name": "馬場情報整理.html",
+                      "type": "file",
+                      "path": "pages/2026/04/26/東京/馬場情報整理.html"
+                    }
+                  ]
+                },
+                {
+                  "name": "福島",
+                  "type": "dir",
+                  "children": [
+                    {
+                      "name": "馬場情報整理.html",
+                      "type": "file",
+                      "path": "pages/2026/04/26/福島/馬場情報整理.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "yyyy",
+      "type": "dir",
+      "children": [
+        {
+          "name": "mm",
+          "type": "dir",
+          "children": [
+            {
+              "name": "dd",
+              "type": "dir",
+              "children": [
+                {
+                  "name": "XX",
+                  "type": "dir",
+                  "children": [
+                    {
+                      "name": "nnR",
+                      "type": "dir",
+                      "children": [
+                        {
+                          "name": "予想.html",
+                          "type": "file",
+                          "path": "pages/yyyy/mm/dd/XX/nnR/予想.html"
+                        },
+                        {
+                          "name": "過去データ.html",
+                          "type": "file",
+                          "path": "pages/yyyy/mm/dd/XX/nnR/過去データ.html"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "馬場情報整理.html",
+                      "type": "file",
+                      "path": "pages/yyyy/mm/dd/XX/馬場情報整理.html"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
