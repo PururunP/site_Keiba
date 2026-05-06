@@ -132,6 +132,45 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "25",
+              "type": "dir",
+              "children": [
+                {
+                  "name": "京都",
+                  "type": "dir",
+                  "children": [
+                    {
+                      "name": "馬場情報整理.html",
+                      "type": "file",
+                      "path": "pages/2026/04/25/京都/馬場情報整理.html"
+                    }
+                  ]
+                },
+                {
+                  "name": "東京",
+                  "type": "dir",
+                  "children": [
+                    {
+                      "name": "馬場情報整理.html",
+                      "type": "file",
+                      "path": "pages/2026/04/25/東京/馬場情報整理.html"
+                    }
+                  ]
+                },
+                {
+                  "name": "福島",
+                  "type": "dir",
+                  "children": [
+                    {
+                      "name": "馬場情報整理.html",
+                      "type": "file",
+                      "path": "pages/2026/04/25/福島/馬場情報整理.html"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
